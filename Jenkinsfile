@@ -9,6 +9,10 @@ pipeline{
     stage("Test"){
       steps{
         echo "Test Stage"
+        sh '''
+        mvn test
+
+        '''
         
       }
     }
