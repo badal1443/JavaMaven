@@ -1,14 +1,11 @@
 pipeline{
-  agent any
+  agent {label 'Jenkins'}
   stages{
     stage("Build"){
       steps{
         echo "Build Stage"
       }
     }
-    
-    
-    
     stage("Test"){
       steps{
         echo "Test Stage"
